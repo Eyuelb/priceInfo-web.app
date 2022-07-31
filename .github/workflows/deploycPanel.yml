@@ -15,7 +15,7 @@ jobs:
       with:
         fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: Eyuelb/priceinfo-web.app@v1
+      uses: Eyuelb/priceinfo-web.app@v0.1
       with:
          ftp-server: ${{ secrets.FTP_SERVER }}
          ftp-username: ${{ secrets.FTP_USERNAME }}
