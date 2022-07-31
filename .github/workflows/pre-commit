@@ -1,0 +1,3 @@
+#!/bin/sh
+
+currentbuildnumber=cat build_number let "currentbuildnumber++" printf $currentbuildnumber > build_number currentbranch=git branch | tr -cd "[:alpha:]" git log $currentbranch --pretty=format:"%h - %an, %ar : %s, Build: $currentbuildnumber"
